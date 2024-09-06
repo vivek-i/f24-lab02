@@ -1,10 +1,11 @@
-function square(sideLen: number): Shape {
+interface Square extends Shape { }
+
+function square(sideLen: number): Square {
     return {
-        sideLen,
         computeArea: function (): number {
             return sideLen * sideLen
         }
     }
 }
 
-export { square }
+export {Square,  square }
